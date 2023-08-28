@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&family=Raleway:wght@600&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.skip-link {
+  background: lightyellow;
+  color: black;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
+
+
+
+
+
+
+body {
+  background: #71b6ff;
+  font-family: 'Noto Sans Mende Kikakui', sans-serif;
+  font-size: 16px;
+
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+  
+  }
+
+
+
+p
+{
+	line-height: 1.68em;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  padding: 1.3em 0;
+  
+
+}
+
+h2 {font-size:1.2555em;}
+h3 {font-size:1em;}
+summary {font-size:1.1em;}
+
+aside
+{
+	margin-top: 5px;
+}
+
+
+main,
+aside,
+footer {
+  padding: 0.5em;
+  border: 2px black ;
+  margin-top: 2px;
+}
+
+header,
+footer {
+  text-align: center;
+  font-size: 15.5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #71b6ff;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-columns:
+   1fr       1fr       2fr;
+  grid-template-areas:
+  "heady     heady     heady"
+  "navvy     navvy     navvy"
+  
+  "aside1    mainy     mainy"
+  "aside1    mainy     mainy"
+  
+  "aside2    mainy     mainy"
+  "aside2    mainy     mainy"
+ 
+  "aside2    mainy     mainy"
+  "footy     footy     footy";
+
+}
+
+header {grid-area: heady; background:rgb(255,255,255); margin: 2px;}
+nav {grid-area: navvy; background: black; margin: 2px}
+
+
+main {grid-area: mainy; background: #b4dbed; max-height: 100%; margin: 2px;}
+#aside1 {grid-area: aside1; background: #c3dea9; margin: 2px;}
+#aside2 {grid-area: aside2; background: #c3dea9; margin: 2px;}
+footer {grid-area: footy; background: rgb(255,255,255); margin: 2px;}
+
+/*From:  https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+ol
+{
+  margin-left: 0px;
+  margin-right: 0px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ol li {
+  padding-bottom: 10px;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #b58ba0;
+  color: black;
+}
+
+.active {
+  background-color: #b58ba0;
+}
+
+nav ul {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+@media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "heady heady"
+  "navvy navvy"
+  "mainy mainy"
+  "aside1 aside2"
+  "footy footy";
+}
+}
+
+@media screen
+
+  and (max-width: 640px)  {
+
+nav ul li a: hover
+{
+	background-color: #b58ba0;
+}
+
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "heady"
+  "mainy"
+  "aside1"
+  "aside2"
+  "navvy"
+  "footy";
+}
+
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 2px;
+  border: 1px black solid;
+  background: #162747;
+
+}
+}
