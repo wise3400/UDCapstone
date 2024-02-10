@@ -10,9 +10,10 @@
 }
 
 
+/* SKIP NAVIGATION */
 .skip-link {
-  background: lightyellow;
-  color: black;
+  background: black;
+  color: white;
   font-weight: 700;
   padding: 4px;
   position: absolute;
@@ -28,15 +29,21 @@
   transition: transform 0.3s;
 }
 
+/* END OF SKIP NAVIGATION CODE */
 
-body {
-  background: #71b6ff;
+
+
+
+body 
+{
+  background: white;
   font-family: 'Noto Sans Mende Kikakui', sans-serif;
   font-size: 16px;
 
 }
 
-.sr-only {
+.sr-only 
+{
     border: 0;
     clip: rect(0, 0, 0, 0);
     height: 1px;
@@ -49,55 +56,77 @@ body {
     color: rgb(0,0,0);
     background-color: rgb(255,255,255);
   
-  }
+}
 
 
 
 p
 {
-	line-height: 1.68em;
-
+  margin-top: -0.5em;
+  margin-left: 2em;
+  margin-right: 5.5em;
+  margin-bottom: 0.5em;
+	line-height: 1.88em;
 }
 
-h1,
-h2 {
+h1,h2 
+{
+  color: black;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 1.3em;
+  
   padding: 1.3em 0;
 }
 
-h2 {font-size:1.2555em;}
-h3 {font-size:1em; }
-summary {font-size:1.1em; }
-
-details
+h3
 {
-
-  padding-left: 5em;
-}
-p
-{
-padding-right: 1.01em;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding: 1.3em 0;
 }
 
 
-main,footer {
+main h2, h3
+{
+  margin-left: 1.35em;
+}
+main p
+{
+  margin-left: 1.8em;
+}
+
+
+summary 
+{
+  font-size: 1em;
+  line-height: 2.566em;
+}
+
+aside
+{
+	margin-top: 5px;
+}
+
+
+main, aside
+{
+  max-width: 1140px;
   padding: 0.5em;
   border: 2px black ;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
-header,
-footer {
+header
+{
+ 
   text-align: center;
   font-size: 15.5px;
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
-  background: #71b6ff;
+  background: white;
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -105,25 +134,76 @@ footer {
   grid-template-columns:
    1fr       1fr       2fr;
   grid-template-areas:
-  "heady     heady     heady"
-  "navvy     navvy     navvy"
-  "mainy     mainy     mainy"
-  "mainy     mainy     mainy"
-  "mainy     mainy     mainy"
-  "mainy     mainy     mainy"
-  "mainy     mainy     mainy"
-  "footy     footy     footy";
+  "head     head     head"
+  "nav     nav     nav"
+  
+  "main    main     main"
+  "main    main     main"
+  
+  "main    main     main"
+  "main    main     main"
+ 
+  "main    main     main";
+  
+
 }
 
-header {grid-area: heady; background:rgb(255,255,255); margin: 2px;}
-nav {grid-area: navvy; background:black; margin: 2px;}
+header 
+{
+  grid-area: head;
+  background:rgb(207, 215, 223); 
+  margin: 0em;
+}
+nav 
+{
+  grid-area: nav; 
+  background: black; 
+  margin: 0em;
+}
+
+main 
+{
+  grid-area: main; 
+  background: white; 
+  max-height: 100%; 
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  margin-left: 8em;
+  padding-left: 7.5em;
+  
+}
+
+/* ASIDES */
+/* #aside1 
+{
+  grid-area: aside1; 
+  background: lightgray;
+  
+  margin-top: 1em;
+  margin-right: -3.666em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  padding-left: 1.125em;
+}
+
+#aside1 p
+{
+  margin-left: 1em;
+  margin-right: 1.1em;
+} */
 
 
-main {grid-area: mainy; background: #b4dbed; max-height: 100%; margin: 2px;}
+/* END OF ASIDE */
 
-footer {grid-area: footy; background: rgb(255,255,255); margin: 2px}
 
-/*From:  https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
 
 ol
 {
@@ -134,100 +214,134 @@ ol
   padding-right: 20px;
 }
 
-ol li {
-  padding-bottom: 10px;
-}
-
-ul
+ol li 
 {
-  margin-left: 0px;
-  margin-right: 0px;
-
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: left;
+  margin-left: 1em;
+  padding-bottom: 8px;
 }
 
-li a {
+li a 
+{
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
 }
 
-li a:hover 
-{
-  background-color: #b58ba0;
-  color: black;
+li a:hover {
+  
+  color: lightskyblue;
 }
 
-.active 
-{
-  background-color: #b58ba0;
-}
-
-
-nav ul 
-{
+nav ul {
 display: flex;
 flex-flow: row nowrap;
 justify-content: space-around;
 }
 
-nav ul li 
+
+img, figcaption
 {
-  list-style: none;
-}
-
-@media screen
-  and (min-width: 641px)
-  and (max-width: 900px)  {
-.container {
-grid-template-columns:
-   1fr 1fr;
-grid-template-areas:
-  "heady heady"
-  "navvy navvy"
-  "mainy mainy"
-  "aside1 aside2"
-  "footy footy";
-}
-}
-
-@media screen
-
-  and (max-width: 640px)  {
-
-nav ul li a: hover
-{
-	background-color: #b58ba0;
-}
-
-.container {
-grid-template-columns:
-   1fr;
-grid-template-areas:
-  "heady"
-  "mainy"
-  "aside1"
-  "aside2"
-  "navvy"
-  "footy";
-
-
-}
-
-nav ul {
-  flex-flow: column nowrap;
+  display:block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  font-size: 13px;
 }
-nav ul li a {
-  display: block;
-  padding: 10px 5px;
-  margin: 2px;
-  border: 1px black solid;
-  background: #162747;
 
+
+
+
+
+/* MOBILE FIRST */
+@media screen and (min-width: 641px) and (max-width: 900px)  
+{
+  .container 
+  {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:
+      1fr 1fr;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "aside1 aside1";
+  }
+  #aside1 
+  {
+    margin-right: 1.5em;
+    margin-left: 2em;
+  }
+  img, figcaption
+  {
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  
 }
+
+@media screen and (max-width: 640px)  
+{
+
+  .container 
+  {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns:
+        1fr;
+      grid-template-areas:
+        "head"
+        "main"
+        "aside1"
+        "nav"
+  }
+
+    nav ul 
+    {
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+    nav ul li a 
+    {
+        display: block;
+        padding: 10px 5px;
+        margin: 2px;
+        border: 1px black solid;
+        background: #162747;
+
+    }
+  #aside1 
+  {
+    margin-right: 1.5em;
+    margin-left: 2em;
+  }
+  img, figcaption
+  {
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  main 
+  {
+    grid-area: main; 
+    background: white; 
+    max-height: 100%; 
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5em;
+    margin-left: 3em;
+    
+  }
+  
+  
 }
+/* MOBILE FIRST CODE END */
