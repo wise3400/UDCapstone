@@ -224,8 +224,13 @@ li a
   padding: 14px 16px;
   text-decoration: none;
 }
+main li a
+{
+  line-height: 0.1em;
+  color:black;
+}
 
-li a:hover {
+nav li a:hover {
   
   color: lightskyblue;
 }
