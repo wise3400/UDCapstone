@@ -151,7 +151,7 @@ header
 header 
 {
   grid-area: head;
-  background:rgb(207, 215, 223); 
+  background:rgb(148,201,255); 
   margin: 0em;
 }
 nav 
@@ -175,7 +175,7 @@ main
 #aside1 
 {
   grid-area: aside1; 
-  background: lightgray;
+  background: #f0f0f0;
   
   margin-top: 1em;
   margin-right: -3.666em;
