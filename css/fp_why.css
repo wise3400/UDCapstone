@@ -170,7 +170,7 @@ main
 
   margin-top: 0.2em;
   margin-bottom: 0.5em;
-  margin-left: 8em;
+  margin-left: 6.5em;
   padding-left: 10.5em;
   
 }
@@ -264,93 +264,79 @@ figcaption
 
 
 
-/* MOBILE FIRST */
-@media screen and (min-width: 641px) and (max-width: 900px)  
-{
-  .container 
-  {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:
-      1fr 1fr;
+/* TABLET */
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "head head"
       "nav nav"
       "main main"
       "aside1 aside1";
   }
-  #aside1 
-  {
-    margin-right: 1.5em;
-    margin-left: 2em;
+  main {
+    margin-left: 1em; /* Resetting margin-left */
+    padding-left: 2.5em; /* Adjusting padding for main content */
   }
-  img, figcaption
-  {
-    display:block;
+  img,
+  figcaption {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
-
-  
 }
 
-@media screen and (max-width: 640px)  
-{
-
-  .container 
-  {
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns:
-        1fr;
-      grid-template-areas:
-        "head"
-        "main"
-        "aside1"
-        "nav"
+/* MOBILE */
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "main"
+      "aside1"
+      "nav";
   }
-
-    nav ul 
-    {
-      flex-flow: column nowrap;
-      text-align: center;
-    }
-    nav ul li a 
-    {
-        display: block;
-        padding: 10px 5px;
-        margin: 2px;
-        border: 1px black solid;
-        background: #162747;
-
-    }
-  #aside1 
-  {
-    margin-right: 1.5em;
-    margin-left: 2em;
-  }
-  img, figcaption
-  {
-    display:block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  nav ul {
+    flex-flow: column nowrap;
     text-align: center;
   }
-  main 
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 2px;
+    border: 1px black solid;
+    background: #162747;
+  }
+  main {
+    padding-left: 1.5em; /* Adjusting padding for main content */
+    margin-left: 0; /* Resetting margin-left */
+  }
+  main p
   {
-    grid-area: main; 
-    background: white; 
-    max-height: 100%; 
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
-    padding-left: 1.5em;
-    margin-left: 3em;
+    margin-left: 2.5em;
+    margin-right: 3em;
+  }
+  main h2
+  {
+    margin-left: 2em;
+  }
+  img 
+  {
+    width: 80%; 
+    margin-left: 3.5em;
+    margin-right: 10em; 
+    margin-top: 0.5em; 
+    margin-bottom: 0.5em; 
     
   }
-  
-  
+  figcaption 
+  {
+    width: 80%; 
+    text-align: left;
+    margin-left: 4.5em;
+    margin-right: 0; 
+  }
 }
+
 /* MOBILE FIRST CODE END */
