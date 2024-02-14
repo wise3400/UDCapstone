@@ -193,6 +193,16 @@ main
 
 /* END OF ASIDE */
 
+details
+{
+  margin-left: 1.9em;
+}
+
+details p
+{
+  margin-left: 1em;
+}
+
 
 main ul 
 {
@@ -243,13 +253,18 @@ justify-content: space-around;
 
 
 
-img, figcaption
+img
 {
   display:block;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+figcaption
+{
+  margin-left: 3.1em;
+  text-align: left;
   font-size: 13px;
 }
 

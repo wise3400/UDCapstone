@@ -87,13 +87,14 @@ h3
 }
 
 
-main h2, h3
+main h2
 {
-  margin-left: 1.35em;
+ 
+  margin-left: -0.85em;
 }
 main p
 {
-  margin-left: 1.8em;
+  margin-left: -1em;
 }
 
 
@@ -109,12 +110,12 @@ aside
 }
 
 
-main, aside
+main
 {
-  max-width: 1140px;
-  padding: 0.5em;
-  border: 2px black ;
+  max-width: 1240px;
+  padding: 0.4em;
   margin-top: 2px;
+
 }
 
 header
@@ -166,12 +167,14 @@ main
   grid-area: main; 
   background: white; 
   max-height: 100%; 
+
   margin-top: 0.2em;
   margin-bottom: 0.5em;
   margin-left: 8em;
   padding-left: 10.5em;
   
 }
+
 
 /* ASIDES */
 /* #aside1 
@@ -241,14 +244,20 @@ justify-content: space-around;
 }
 
 
-img, figcaption
+img
 {
   display:block;
-  width: 50%;
-  margin-left: auto;
+  width: 70%;
+  margin-left: 6.5em;
   margin-right: auto;
-  text-align: center;
+  
+}
+figcaption
+{
+  text-align: left;
+  margin-left: 8em;
   font-size: 13px;
+
 }
 
 
