@@ -193,6 +193,11 @@ main
 
 /* END OF ASIDE */
 
+aside details
+{
+  margin-left: 0.2em;
+}
+
 details
 {
   margin-left: 1.9em;
