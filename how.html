@@ -36,7 +36,7 @@
         You should always consider using sans-serif for paragraphs and normal serif for all headers.
       </p>
 
-      <br>
+
 
       <p>
         <a href = "https://fonts.google.com/">Google fonts</a> is a excellent platform for exploring and experimenting with various typefaces. 
@@ -53,7 +53,7 @@
         background because it could hurt the eyes. <a href = "https://color.adobe.com/create/color-contrast-analyzer">Adobe Color</a> is a great tool to check for contrast between your regular text 
         and your background. The tool will also tell you whether you have met the WCAG guidelines.
       </p>
-      <br>
+      
       <p>You could also use the color contrast checker that I made below!</p>
      
 
@@ -64,14 +64,56 @@
 
       <h2><b>Alt Texts in Images</b></h2>
       <p>
-        TBD
+        Ensuring the inclusion of alt text and captions for images is crucial. 
+        It facilitates accessibility for all users, ensuring that everyone can comprehend the content regardless of their abilities.
+        Alt text allows screen readers to convey image descriptions, enabling visually impaired individuals to understand the context. 
+        Moreover, in cases where images fail to load on a website, alt text provides essential information about the image's content.
+        Utilizing tools like the WAVE tool (linked below) can help detect any missing alt text, ensuring comprehensive accessibility standards are met.
       </p>
 
       <h2><b>Skip Navigation </b> </h2>
       <p>
-        TBD
+        The skip navigation feature is commonly included in web design to further enhance 
+        accessibility for people who rely on the keyboard navigation. By pressing the "tab" 
+        key, the skip navigation link allows user to bypass the main navigation and 
+        jumps directly to the main content of the page. This feature does in fact 
+        save some time. Users don't have to go through the same set of links on every page. 
+        To sum up, skip navigation is quick and easy for access to important content without
+        getting stuck in the navigation menus.
       </p>
 
+      <p>
+        For the HTML part, you will need to place the following code below the body tag:
+      </p>
+      <p><code> &lt;a class = "skip-link" href = "#maincontent" &gt; Skip to main content/a&gt;</code></p>
+     
+      
+      <p>
+        Here's the CSS code on how to implement a skip navigation:
+      </p>
+      <pre> 
+      <code>
+        .skip-link 
+        {
+          background: black;
+          color: #fff;
+          font-weight: 700;
+          padding: 4px;
+          position: absolute;
+          transform: translateY(-200%);
+        }  
+      
+        .skip-link:focus {
+            transform: translateY(0%);
+        } 
+    
+        .skip-link {
+            transition: transform 0.3s;
+        }
+
+      </code>
+      </pre>
+      
       <h2><b>HTML Validator</b></h2>
       <p>
         The <a href = "https://validator.w3.org/">HTML Validator</a> tool allows you to check for syntax errors in your HTML code as well as 
@@ -102,7 +144,9 @@
 
       <h2><b>Responsive Website</b></h2>
       <p>
-        TBD
+        Now that mobile usage has skyrocketed, it's crucial to ensure your website is responsive. Some users depend solely on smartphones to access websites, often due to constraints like limited mobility. 
+        This can be achieved through the implementation of media queries, which assess the size of the user's device—whether it's a phone, tablet, or laptop—and adapt the layout accordingly. 
+        For instance, this adaptation might involve transitioning from a traditional horizontal navigation bar to a vertical, thumb-friendly navigation layout.
       </p>
 
     </section>
