@@ -211,6 +211,11 @@ details p
   margin-top: 3px;
 }
 
+details li
+{
+  line-height: 2em;
+}
+
 
 main ul 
 {
@@ -386,6 +391,10 @@ figcaption
     summary
     {
       margin-left: 0.8em;
+    }
+    details li
+    {
+      line-height: 2em;
     }
 
   
