@@ -58,8 +58,37 @@
      
       <h2><b>Screen Readers</b></h2>
       <p>
-        TBD 
+        Examples such as navigation elements are often intuitive and recognizable to sighted users,
+        but not for those who are using screen readers. To address this discrepancy, creating 
+        elements exclusively for screen readers can improve accessibility. Please see code 
+        below for implementation.
       </p>
+
+      <p>HTML Code:</p>
+      <pre>
+      <code> &lt;h2 class = "sr-only">Navigation&gt; </code>
+      </pre>
+
+      <p>CSS Code:</p>
+      <pre>
+        <code>
+          .sr-only 
+          {
+              border: 0;
+              clip: rect(0, 0, 0, 0);
+              height: 1px;
+              margin: -1px;
+              overflow: hidden;
+              padding: 0;
+              position: absolute;
+              white-space: nowrap;
+              width: 1px;
+              color: rgb(0,0,0);
+              background-color: rgb(255,255,255);
+            
+          }
+        </code>
+      </pre>
 
       <h2><b>Alt Texts in Images</b></h2>
       <p>
