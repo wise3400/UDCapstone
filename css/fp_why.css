@@ -344,6 +344,14 @@ figcaption
     margin-left: 4.5em;
     margin-right: 0; 
   }
+  label
+  {
+    margin-left: 2.5em;
+  }
+  form button
+  {
+    margin-left: 2.5em;
+  }
 }
 
 /* MOBILE FIRST CODE END */
