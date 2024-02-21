@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Implementation of Universal Design</title>
+
+  <script defer src = "js/colorContrast.js"> </script>
+  <link href="css/colorContrast.css" rel="stylesheet">
+
   <link href="css/fp_why.css" rel="stylesheet">
   <link href="css/fp_normalize.css" rel="stylesheet">
 
@@ -51,11 +55,29 @@
         Colors are important. Period. If you don't have good contrast, people will have migraines 
         when they're looking at your site. It is not recommended to use bright colors for the 
         background because it could hurt the eyes. <a href = "https://color.adobe.com/create/color-contrast-analyzer">Adobe Color</a> is a great tool to check for contrast between your regular text 
-        and your background. The tool will also tell you whether you have met the WCAG guidelines.
+        and your background. The tool will also tell you whether you have met the WCAG guidelines. More explanation here: <a href = "https://webaim.org/resources/contrastchecker/">Web AIM.</a>
       </p>
       
       <p>You could also use the color contrast checker that I made below!</p>
      
+    
+      <form id="colorContrastChecker">
+
+          <label for="textColor">Text Color:</label>
+          <input type="color" id="textColor" value="#000000">
+          <br>
+          <label for="background">Background Color:</label>
+          <input type="color" id="background" value="#ffffff">
+          <br>
+          <br>
+          <button type="button" onclick="checkContrast()">CHECK</button>
+     
+        </form>
+        <!-- Displays results -->
+        <div id="showData"></div>
+      
+      
+      
       <h2><b>Screen Readers</b></h2>
       <p>
         Examples such as navigation elements are often intuitive and recognizable to sighted users,
@@ -68,6 +90,7 @@
       <pre>
         
       <code> &lt;h2 class = "sr-only">Navigation &lt;/h2&gt; </code>
+      
       </pre>
 
       <p>CSS Code:</p>
@@ -180,7 +203,7 @@
 
       <h2><b>Resources</b></h2>
       <p><a href = "https://www.audioeye.com/ultimate-guide-to-accessible-web-design/#benefits-accessible-design">Ultimate Guide to Accessible Web Design</a></p>
-
+      <p><a href = "https://necolas.github.io/normalize.css/">normalize.css - click for file download and explanation</a></p>
     </section>
 
   </main>
