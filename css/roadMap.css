@@ -1,0 +1,77 @@
+
+.roadmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(148,201,255);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 50px auto;
+}
+.milestone {
+    flex: 1 1 40%;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid black;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.milestone:first-child {
+    border-left: none;
+}
+.milestone h2 
+{
+    text-align: left;
+    color: black;
+    
+    margin-left: 1.6em;
+    margin-right: 1.6em;
+   
+    /* color: #333; */
+}
+.milestone p 
+{
+    color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: left;
+}
+.milestone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 640px) {
+    .milestone {
+        flex-basis: 100%;
+    }
+    .milestone p 
+    {
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+        
+        text-align: left;
+    }
+    .milestone h2
+    {
+        text-align: left;
+        margin-left: 1.1em;
+        margin-right: 1.1em;
+    }
+}
+
+/* Interactive hover effect */
+.milestone:hover {
+    background-color: white;
+}
