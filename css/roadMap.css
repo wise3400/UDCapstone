@@ -3,12 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 10px;
+
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 80%;
-    margin: 50px auto;
+    margin: 15px auto;
+    margin-left: calc(70px - 5%);
 }
 .milestone {
     flex: 1 1 40%;
@@ -17,7 +19,7 @@
     border-left: 2px solid black;
     position: relative;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .milestone:first-child {
     border-left: none;
