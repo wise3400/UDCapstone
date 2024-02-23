@@ -10,7 +10,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 80%;
     margin: 15px auto;
-    margin-left: calc(70px - 5%);
+    margin-left: calc(85px - 5%);
 }
 .milestone {
     flex: 1 1 40%;
@@ -70,6 +70,10 @@
         text-align: left;
         margin-left: 1.1em;
         margin-right: 1.1em;
+    }
+    .roadmap
+    {
+        margin-left: calc(65px - 5%);
     }
 }
 
