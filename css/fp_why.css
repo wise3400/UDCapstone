@@ -177,6 +177,8 @@ main
 }
 
 
+
+
 /* ASIDES */
 /* #aside1 
 {
@@ -199,14 +201,14 @@ main
 
 /* END OF ASIDE */
 
-
+/* 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: black;
-}
+} */
 
 
 ol
@@ -252,6 +254,22 @@ img
   margin-left: 6.5em;
   margin-right: auto;
   
+}
+
+main figcaption
+{
+  padding-bottom: 25px;
+}
+
+main ul 
+{
+  /* line-height: 0.1em; */
+  display: list-item;
+  list-style-type: disc;
+  background-color: white;
+  color:black;
+  line-height: 1.8em;
+  padding-bottom: 2em;
 }
 .center
 {
@@ -351,6 +369,10 @@ figcaption
   form button
   {
     margin-left: 2.5em;
+  }
+  main ul
+  {
+    margin-left: 2.1em;
   }
 }
 
