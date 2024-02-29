@@ -84,6 +84,7 @@ h3
   color: black;
   font-family: 'Raleway', sans-serif;
   padding: 1.3em 0;
+  margin-left: -30px;
 }
 
 
@@ -253,6 +254,7 @@ img
   width: 70%;
   margin-left: 6.5em;
   margin-right: auto;
+  padding-bottom: 2em;
   
 }
 
@@ -376,6 +378,10 @@ a
   main ul
   {
     margin-left: 2.1em;
+  }
+  h3
+  {
+    padding-left: 2.5em;
   }
 }
 
