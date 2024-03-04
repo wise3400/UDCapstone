@@ -14,7 +14,7 @@
 <a class = "skip-link" href = "#maincontent">Skip to main content </a>
 <div class="container">
   <header>
-    <h1><b> Example of the Good & Bad </b></h1>
+    <h1><strong> Example of the Good & Bad </strong></h1>
   </header>
   <nav>
     <h2 class = "sr-only">Navigation</h2>
@@ -31,11 +31,51 @@
 <main id = "maincontent">
     <section>
 
-      <h2> <b>Oh YEA! Now, that's good.. </b> </h2>
-      <p>Test</p>
+      <h2> <strong>Not too shabby.. but still okay - <a href = "https://www.honolulu.hawaii.edu/facdev/" target="_blank" rel="noopener noreferrer">Honolulu Community College</a> </strong> </h2>
+      <p>Let's take a look at a good accessible website.</p>
+      <img src = "img/honolulu.png" alt = "a snapshot of the honolulu community college website">
+      
+      <p>This looks more modern! Let's check WAVE.</p>
+      <img src = "img/honolulu_WAVE.png" alt = "a snapshot of the honolulu community college website using WAVE">
+      <p>So far so good. Good contrast, no errors, and a bunch of <a href = "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank" rel="noopener noreferrer">ARIAs.</a> Yay!</p>
+      
+      <h3><strong>Mobile View</strong></h3>
+      <img src = "img/honolulu_mobile.png" alt = "a snapshot of the honolulu community college website in mobile view">
+      <p>Not too shabby here. The only problem is the navigation menu. Nobody could get to the other pages. And that is a problem.</p>
 
-      <h2> <b>Bad bad bad... tsk. tsk. tsk. -  <a href = "https://skepticalscience.com/" target="_blank" rel="noopener noreferrer">Skeptical Science</a></b> </h2>
-      <p>Let's check out Skeptical Science.</p>
+      <h3><strong>Lighthouse</strong></h3>
+      <img src = "img/honolulu_lighthouse.png" alt = "a snapshot of the honolulu community college website using lighthouse tool">
+      <p>
+        Ohh.. didn't expect this one to be average. At least we have an "A" on the accessibility section. 
+        The score is okay for the SEO and best practices. Creators for this website should do more about
+        the performance of the site! Don't just stop there!
+      </p>
+      <h3><strong>Validator</strong></h3>
+      <img src = "img/honolulu_validator.png" alt = "a snapshot of the honolulu community college website using the validator">
+      <p>
+        Yikes. We have 10+ silly syntax errors. It's better than 100+ errors at least. But, these errors are easy to fix. 
+        Not sure why this creator of the website didn't even attempt to check the validator. Come on. You can do better!
+      </p>
+      
+      <h3><strong>Outliner</strong></h3>
+      <img src = "img/honolulu_outliner.png" alt = "a snapshot of the honolulu community college website using the outliner tool">
+
+      <p>
+        Uh oh. We have 2 "untitled elements". This is no good for the screen reader and for the blind! 
+        It's going to be unclear to the blind. I am warning ya. Slap those headers with names at least!
+        Don't slack!
+      </p>
+      
+      <h3><strong>Ending on a good note - AChecker tool</strong></h3>
+      <img src = "img/honolulu_achecker.png" alt = "a snapshot of the honolulu community college website using the Achecker tool">
+      <p>Yeehaw! Now this is just excellent. No guidelines and laws have been broken. No need to be sued. Congratulations!</p>
+
+
+
+
+
+      <h2> <strong>Terrible. Just terrible. Tsk. Tsk. Tsk. -  <a href = "https://skepticalscience.com/" target="_blank" rel="noopener noreferrer">Skeptical Science</a></strong> </h2>
+      <p>Let's check out Skeptical Science, a terrible website.</p>
       <img src = "img/skeptical_science.png" alt = "snapshot of skeptical science website">
       
       <p>Looks like something out of the fricking 90s. Let's check WAVE.</p>
@@ -58,7 +98,7 @@
       <h3><strong>Lighthouse</strong></h3>
       <img src ="img/skeptical_lighthouse.png" alt = "snapshot of the lighthouse tool used on skeptical science">
       <p>
-        Oh boy. It's an F. Poor performance, poor accessibility, and did not use best practices.
+        Oh boy. It's an "F". Poor performance, poor accessibility, and did not use best practices.
         Take a look at the SEO. That is not the number you want. Your business will not gain traction if 
         that were to happen. Be aware.
       </p>
@@ -83,7 +123,7 @@
       <p>
         Finally. Finally, we end on a good note. Elements are properly named and listed! At least there are 
         no "untitled elements". Whew... 
-        Although, it is not good practice to name an element twice. They named "Term Lookup" twice.
+        Although, it is not good practice to name an element twice. They named "Term Lookup" twice. The screen reader and the user will get confused!
       </p>
       
   
