@@ -301,12 +301,15 @@ a
 }
 
 table, th, td {
-  margin-bottom:4em;
+  margin-bottom:2em;
+  line-height: 2em;
+  
   border-collapse: collapse;
 }
 td {
   border-collapse: collapse;
   border: 2px solid black;
+  
 }
 td {
   padding-right: 50px;
