@@ -66,7 +66,7 @@ p
   margin-left: 2em;
   margin-right: 5.5em;
   margin-bottom: 0.5em;
-	line-height: 1.88em;
+  line-height: 1.88em;
 }
 
 h1,h2 
@@ -99,10 +99,19 @@ main p
 }
 
 
+
 summary 
 {
   font-size: 1em;
   line-height: 2.566em;
+  margin-left: -1.8em;
+}
+
+details p
+{
+    margin-top: 1em;
+    padding-left: 0.5em;
+    margin-right: 1.5em;
 }
 
 aside
@@ -251,6 +260,7 @@ img
 {
   display:block;
   width: 70%;
+  margin-top:2em;
   margin-left: 6.5em;
   margin-right: auto;
   
@@ -354,7 +364,7 @@ a
     width: 80%; 
     margin-left: 3.5em;
     margin-right: 10em; 
-    margin-top: 0.5em; 
+    margin-top: 1em; 
     margin-bottom: 0.5em; 
     
   }
@@ -376,6 +386,14 @@ a
   main ul
   {
     margin-left: 2.1em;
+  }
+  summary
+  {
+    margin-left: 1em;
+  }
+  details p 
+  {
+    margin-left:0.5em;
   }
 }
 
