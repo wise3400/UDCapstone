@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&family=Raleway:wght@600&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* SKIP NAVIGATION */
+.skip-link {
+  background: black;
+  color: white;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
+
+/* END OF SKIP NAVIGATION CODE */
+
+
+
+
+body 
+{
+  background: white;
+  font-family: 'Noto Sans Mende Kikakui', sans-serif;
+  font-size: 16px;
+
+}
+
+.sr-only 
+{
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+  
+}
+
+
+
+p
+{
+  margin-top: -0.5em;
+  margin-left: 2em;
+  margin-right: 5.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.88em;
+}
+
+h1,h2 
+{
+  color: black;
+  font-family: 'Raleway', serif;
+  font-weight: 500px;
+  font-size: 1.3em;
+  
+  padding: 1.3em 0;
+}
+
+h3
+{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding: 1.3em 0;
+}
+
+
+main h2
+{
+ 
+  margin-left: -1.6em;
+}
+main p
+{
+  margin-left: -2em;
+  margin-bottom: 20px;
+}
+
+
+
+summary 
+{
+  font-size: 1em;
+  line-height: 2.566em;
+  margin-left: -1.8em;
+}
+
+details p
+{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+aside
+{
+	margin-top: 5px;
+}
+
+
+main
+{
+  max-width: 1240px;
+  padding: 0.4em;
+  margin-top: 2px;
+
+}
+
+header
+{
+ 
+  text-align: center;
+  font-size: 15.5px;
+}
+
+.container {
+  margin: 0 auto;
+  background: white;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-columns:
+   1fr       1fr       2fr;
+  grid-template-areas:
+  "head     head     head"
+  "nav     nav     nav"
+  
+  "main    main     main"
+  "main    main     main"
+  
+  "main    main     main"
+  "main    main     main"
+ 
+  "main    main     main";
+  
+
+}
+
+header 
+{
+  grid-area: head;
+  background:rgb(148,201,255); 
+  margin: 0em;
+}
+nav 
+{
+  grid-area: nav; 
+  background: black; 
+  margin: 0ems;
+}
+
+main 
+{
+  grid-area: main; 
+  background: white; 
+  max-height: 100%; 
+
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  margin-left: 6.5em;
+  padding-left: 10.5em;
+  
+}
+
+
+
+
+/* ASIDES */
+/* #aside1 
+{
+  grid-area: aside1; 
+  background: lightgray;
+  
+  margin-top: 1em;
+  margin-right: -3.666em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  padding-left: 1.125em;
+}
+
+#aside1 p
+{
+  margin-left: 1em;
+  margin-right: 1.1em;
+} */
+
+
+/* END OF ASIDE */
+
+/* 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+} */
+
+
+ol
+{
+  margin-left: 0px;
+  margin-right: 0px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ol li 
+{
+  text-align: left;
+  margin-left: 1em;
+  padding-bottom: 8px;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  
+  color: lightskyblue;
+}
+
+nav ul {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+
+img
+{
+  display:block;
+  width: 70%;
+  margin-top:2em;
+  margin-left: 6.5em;
+  margin-right: auto;
+  
+}
+
+main figcaption
+{
+  padding-bottom: 25px;
+}
+
+main ul 
+{
+  /* line-height: 0.1em; */
+  display: list-item;
+  list-style-type: disc;
+  background-color: white;
+  color:black;
+  line-height: 1.8em;
+  padding-bottom: 2em;
+}
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption
+{
+  text-align: left;
+  margin-left: 8em;
+  font-size: 13px;
+
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "head head"
+      "nav nav"
+      "main main"
+      "aside1 aside1";
+  }
+  main {
+    margin-left: 1em; /* Resetting margin-left */
+    padding-left: 2.5em; /* Adjusting padding for main content */
+  }
+  img,
+  figcaption {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "main"
+      "aside1"
+      "nav";
+  }
+  nav ul {
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 2px;
+    border: 1px black solid;
+    background: #162747;
+  }
+  main {
+    padding-left: 1.5em; /* Adjusting padding for main content */
+    margin-left: 0; /* Resetting margin-left */
+  }
+  main p
+  {
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+  }
+  main h2
+  {
+    margin-left: 0.8em;
+  }
+  img 
+  {
+    width: 80%; 
+    margin-left: 3.5em;
+    margin-right: 10em; 
+    margin-top: 1em; 
+    margin-bottom: 0.5em; 
+    
+  }
+  figcaption 
+  {
+    width: 80%; 
+    text-align: left;
+    margin-left: 4.5em;
+    margin-right: 0; 
+  }
+  label
+  {
+    margin-left: 2.5em;
+  }
+  form button
+  {
+    margin-left: 2.5em;
+  }
+  main ul
+  {
+    margin-left: 2.1em;
+  }
+  summary
+  {
+    margin-left: 1em;
+  }
+}
+
+/* MOBILE FIRST CODE END */
