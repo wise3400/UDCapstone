@@ -1,0 +1,43 @@
+/* FROM: https://www.sliderrevolution.com/resources/css-text-animation/ */
+/* Developer: Nooray Yemon */
+/* Used CHATGPT for help */
+/* MODIFIED BY WILSON SEET */
+
+/* Animating the appearance of h1 in the header */
+header h1 {
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeInHeader 1.5s forwards; /* Animation to fade in */
+}
+
+
+aside{
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeInSection 2.3s forwards; /* Animation to fade in */
+}
+
+/* Animating the appearance of section in main content */
+#maincontent section {
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeInSection 2.3s forwards; /* Animation to fade in */
+}
+
+/* Keyframes for fading in header */
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for fading in section */
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

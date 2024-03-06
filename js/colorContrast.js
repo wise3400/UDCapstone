@@ -1,3 +1,7 @@
+// MODIFIED BY WILSON SEET
+
+
+
 // FUNCTION FROM: https://dev.to/alvaromontoro/building-your-own-color-contrast-checker-4j7o
 // AND: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb/5624139#5624139
 // breaks the colors from HEX to RGB
