@@ -315,7 +315,9 @@ td {
   padding-right: 50px;
 }
 
-
+code{
+  margin-left: 2.5em;
+}
 
 /* TABLET */
 @media screen and (min-width: 641px) and (max-width: 900px) {
@@ -409,6 +411,9 @@ td {
   details p 
   {
     margin-left:0.5em;
+  }
+  code{
+    margin-left: 0.3em;
   }
 }
 
