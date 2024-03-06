@@ -6,19 +6,19 @@
 /* Animating the appearance of h1 in the header */
 header h1 {
   opacity: 0; /* Start with opacity 0 */
-  animation: fadeInHeader 1.5s forwards; /* Animation to fade in */
+  animation: fadeInHeader 1.05s forwards; /* Animation to fade in */
 }
 
 
 aside{
   opacity: 0; /* Start with opacity 0 */
-  animation: fadeInSection 2.3s forwards; /* Animation to fade in */
+  animation: fadeInSection 1.1s forwards; /* Animation to fade in */
 }
 
 /* Animating the appearance of section in main content */
 #maincontent section {
   opacity: 0; /* Start with opacity 0 */
-  animation: fadeInSection 2.3s forwards; /* Animation to fade in */
+  animation: fadeInSection 1s forwards; /* Animation to fade in */
 }
 
 /* Keyframes for fading in header */
