@@ -322,6 +322,12 @@ a
     margin-right: auto;
     text-align: center;
   }
+  iframe {
+    border: none;
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+  }
 }
 
 /* MOBILE */
@@ -390,6 +396,22 @@ a
   {
     margin-left: 1em;
   }
+  iframe {
+    border: none;
+    margin: 0 auto;
+    max-width: 112%;
+    width: 100%;
+    height: 600px; 
+    
+  }
 }
 
 /* MOBILE FIRST CODE END */
+
+iframe{
+  border: none;
+  height: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding-right: 4.5em;
+}
