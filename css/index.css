@@ -326,7 +326,7 @@ a
     border: none;
     max-width: 100%;
     width: calc(100% - 4.5em); 
-    height: 600px;
+    height: 2800px;
     margin: 0 auto;
     padding-left: 0.3em; 
   }
@@ -442,7 +442,7 @@ a
 
 iframe{
   border: none;
-  height: 2530px;
+  height: 2600px;
   width: 1000px;
   margin: 0 auto;
   padding-right: 4.5em;
