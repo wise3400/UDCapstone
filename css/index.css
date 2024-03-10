@@ -358,7 +358,7 @@ a
     width: calc(100% - 4.5em); 
     height: 600px;
     margin: 0 auto;
-    padding-left: 8em; 
+    padding-left: 0em; 
   }
 }
 
