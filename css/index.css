@@ -302,7 +302,7 @@ a
 
 
 /* TABLET */
-@media screen and (min-width: 641px) and (max-width: 900px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -312,8 +312,8 @@ a
       "aside1 aside1";
   }
   main {
-    margin-left: 1em; /* Resetting margin-left */
-    padding-left: 2.5em; /* Adjusting padding for main content */
+    margin-left: 1.3em; 
+    padding-left: 7.3em; 
   }
   img,
   figcaption {
@@ -325,8 +325,10 @@ a
   iframe {
     border: none;
     max-width: 100%;
-    width: 100%;
+    width: calc(100% - 4.5em); 
     height: 600px;
+    margin: 0 auto;
+    padding-left: 8em; 
   }
 }
 
@@ -352,8 +354,8 @@ a
     background: #162747;
   }
   main {
-    padding-left: 1.5em; /* Adjusting padding for main content */
-    margin-left: 0; /* Resetting margin-left */
+    padding-left: 1.5em; 
+    margin-left: 0; 
   }
   main p
   {

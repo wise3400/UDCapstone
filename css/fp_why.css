@@ -292,7 +292,7 @@ code{
 }
 
 /* TABLET */
-@media screen and (min-width: 641px) and (max-width: 900px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -302,8 +302,8 @@ code{
       "aside1 aside1";
   }
   main {
-    margin-left: 1em; /* Resetting margin-left */
-    padding-left: 2.5em; /* Adjusting padding for main content */
+    margin-left: 6.5em; /* Resetting margin-left */
+    padding-left: 2.2em; /* Adjusting padding for main content */
   }
   img,
   figcaption {

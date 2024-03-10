@@ -295,7 +295,7 @@ a
 
 
 /* TABLET */
-@media screen and (min-width: 641px) and (max-width: 900px) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -305,8 +305,8 @@ a
       "aside1 aside1";
   }
   main {
-    margin-left: 1em; /* Resetting margin-left */
-    padding-left: 2.5em; /* Adjusting padding for main content */
+    margin-left: 1.5em; 
+    padding-left: 4em; 
   }
   img,
   figcaption {
@@ -339,8 +339,8 @@ a
     background: #162747;
   }
   main {
-    padding-left: 1.5em; /* Adjusting padding for main content */
-    margin-left: 0; /* Resetting margin-left */
+    padding-left: 1.5em; 
+    margin-left: 0; 
   }
   main p
   {
