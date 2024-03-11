@@ -309,7 +309,7 @@ code{
     width: 80%;
     margin-left: 1em;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
   }
   iframe {
     border: none;
@@ -334,12 +334,14 @@ code{
     margin-left: 6.5em; /* Resetting margin-left */
     padding-left: 2.2em; /* Adjusting padding for main content */
   }
-  img,
-  figcaption {
+  img {
     width: 80%;
-    margin-left: auto;
+    margin-left: 3.2em;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
+  }
+  figcaption{
+    margin-left: 3.8em;
   }
 }
 
